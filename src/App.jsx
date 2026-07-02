@@ -12,6 +12,7 @@ function App() {
     <>
       <ClassComponent/>
       <FunctionComponent/>
+      <ClassComponent/>
     </>
   )
 }
