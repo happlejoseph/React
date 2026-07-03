@@ -5,6 +5,9 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import ClassComponent from './ClassComponent'
 import FunctionComponent from './FunctionComponent'
+import Mounting from './Mounting'
+import Removing from './Removing'
+import Updating from './Updating'
 
 function App() {
 
@@ -12,6 +15,9 @@ function App() {
     <>
       <ClassComponent/>
       <FunctionComponent/>
+      <Mounting/>
+      <Updating/>
+      <Removing/>
     </>
   )
 }
