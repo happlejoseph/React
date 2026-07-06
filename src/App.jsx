@@ -8,16 +8,18 @@ import FunctionComponent from './FunctionComponent'
 import Mounting from './Mounting'
 import Removing from './Removing'
 import Updating from './Updating'
+import UseStateHook from './UseStateHook'
 
 function App() {
 
   return (
     <>
       <ClassComponent/>
-      <FunctionComponent/>
-      <Mounting/>
-      <Updating/>
-      <Removing/>
+      {/* <FunctionComponent/> */}
+      {/* <Mounting/> */}
+      {/* <Updating/> */}
+      {/* <Removing/> */}
+      <UseStateHook/>
     </>
   )
 }
