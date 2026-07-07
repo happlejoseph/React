@@ -8,5 +8,22 @@ const Color = ()=> {
         if(bgColor === "white") {
             setBgColor("black")
         }
+        else {
+            setBgColor("white")
+        }
     }
+
+    return(
+        <div
+        style= {
+            {backgroundColor: bgColor,
+                height: "300px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center"
+
+            }
+        }>
+        </div>
+    )
 }
