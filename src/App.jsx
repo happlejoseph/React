@@ -9,6 +9,10 @@ import Mounting from './Mounting'
 import Removing from './Removing'
 import Updating from './Updating'
 import UseStateHook from './UseStateHook'
+import UseEffectComp from './useEffect/UseEffectComp'
+import UseEffectCounter from './useEffect/UseEffectCounter'
+import UseEffectApi from './useEffect/UseEffectApi'
+import ParentComp from './useEffect/ParentComp'
 
 function App() {
 
@@ -19,7 +23,11 @@ function App() {
       {/* <Mounting/> */}
       {/* <Updating/> */}
       {/* <Removing/> */}
-      <UseStateHook/>
+      {/* <UseStateHook/>
+      <UseEffectComp/>
+      <UseEffectCounter/>
+      <UseEffectApi/> */}
+      <ParentComp/>
     </>
   )
 }
