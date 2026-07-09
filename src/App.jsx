@@ -13,13 +13,30 @@ import UseEffectComp from './useEffect/UseEffectComp'
 import UseEffectCounter from './useEffect/UseEffectCounter'
 import UseEffectApi from './useEffect/UseEffectApi'
 import ParentComp from './useEffect/ParentComp'
+import userContext from './useContext/userContext'
+import UserContextComp from './useContext/UserContextComp'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import LinkComp from './LinkComp'
 
 function App() {
 
+  const user = {
+    name: "anu",
+    age: "20",
+    email: "anu@gmail.com"
+  }
   return (
     <>
-      <ClassComponent/>
-      {/* <FunctionComponent/> */}
+      <userContext.Provider value={user}>
+        <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<FunctionComponent/>}/>
+          <Route path="/user-context" element={<UserContextComp/>}/>
+          <Route path="/link" element={<LinkComp/>}/>
+
+          
+      {/* <ClassComponent/> */}
+      {/*  */}
       {/* <Mounting/> */}
       {/* <Updating/> */}
       {/* <Removing/> */}
@@ -27,7 +44,11 @@ function App() {
       <UseEffectComp/>
       <UseEffectCounter/>
       <UseEffectApi/> */}
-      <ParentComp/>
+      {/* <ParentComp/> */}
+      {/* <UserContextComp/> */}
+      </Routes>
+      </BrowserRouter>
+      </userContext.Provider>
     </>
   )
 }
