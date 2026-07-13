@@ -16,7 +16,10 @@ import ParentComp from './useEffect/ParentComp'
 import userContext from './useContext/userContext'
 import UserContextComp from './useContext/UserContextComp'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import LinkComp from './LinkComp'
+import LinkComp from './reactRoute/LinkComp'
+import DynamicRoute from './reactRoute/DynamicRoute'
+import NestedRoute from './reactRoute/NestedRoute'
+import Navbar from './reactRoute/Navbar'
 
 function App() {
 
@@ -33,6 +36,19 @@ function App() {
           <Route path="/" element={<FunctionComponent/>}/>
           <Route path="/user-context" element={<UserContextComp/>}/>
           <Route path="/link" element={<LinkComp/>}/>
+          <Route path="/dynamic/:id" element={<DynamicRoute/>}/>
+
+          <Route path='/nested' element={<NestedRoute/>}>
+          <Route path="funComp" element={<FunctionComponent/>}/>
+          <Route path="UserContext" element={<UserContextComp/>}/>
+
+          </Route>
+          
+          <Route path='/nav' element={<Navbar/>}>
+          <Route path='user-context' element={<UserContextComp/>}/>
+          <Route path="fun-comp" element={<FunctionComponent/>}/>
+
+          </Route>
 
           
       {/* <ClassComponent/> */}
