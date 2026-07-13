@@ -20,6 +20,7 @@ import LinkComp from './reactRoute/LinkComp'
 import DynamicRoute from './reactRoute/DynamicRoute'
 import NestedRoute from './reactRoute/NestedRoute'
 import Navbar from './reactRoute/Navbar'
+import ReactForms from './ReactForms'
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
           <Route path="/user-context" element={<UserContextComp/>}/>
           <Route path="/link" element={<LinkComp/>}/>
           <Route path="/dynamic/:id" element={<DynamicRoute/>}/>
+          <Rout path='/form' element={<ReactForms/>}/>
 
           <Route path='/nested' element={<NestedRoute/>}>
           <Route path="funComp" element={<FunctionComponent/>}/>
