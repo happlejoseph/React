@@ -1,18 +1,5 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
-import ClassComponent from './ClassComponent'
 import FunctionComponent from './FunctionComponent'
-import Mounting from './Mounting'
-import Removing from './Removing'
-import Updating from './Updating'
-import UseStateHook from './UseStateHook'
-import UseEffectComp from './useEffect/UseEffectComp'
-import UseEffectCounter from './useEffect/UseEffectCounter'
-import UseEffectApi from './useEffect/UseEffectApi'
-import ParentComp from './useEffect/ParentComp'
 import userContext from './useContext/userContext'
 import UserContextComp from './useContext/UserContextComp'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -20,7 +7,11 @@ import LinkComp from './reactRoute/LinkComp'
 import DynamicRoute from './reactRoute/DynamicRoute'
 import NestedRoute from './reactRoute/NestedRoute'
 import Navbar from './reactRoute/Navbar'
+
 import ReactForms from './ReactForms'
+import UseRef from './UseRef'
+import UseReducer from './UseReducer'
+import Counter from './customHook/Counter'
 
 function App() {
 
@@ -38,7 +29,12 @@ function App() {
           <Route path="/user-context" element={<UserContextComp/>}/>
           <Route path="/link" element={<LinkComp/>}/>
           <Route path="/dynamic/:id" element={<DynamicRoute/>}/>
+
           <Rout path='/form' element={<ReactForms/>}/>
+
+          <Route path='useref' element={<UseRef/>}/>
+          <Route path='/usereducer' element={<UseReducer/>}/>
+          <Route path='/custom' element={<Counter/>}/>
 
           <Route path='/nested' element={<NestedRoute/>}>
           <Route path="funComp" element={<FunctionComponent/>}/>

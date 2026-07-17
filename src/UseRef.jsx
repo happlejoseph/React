@@ -1,33 +1,11 @@
 
 
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from 'react'
+import { useState } from 'react'
 
+function UseRef() {
 
-// const UseRef = ()=> {
-
-//     let [number, setNumber] = useState(0);
-
-//     useEffect(()=> {
-//         console.log('component rendered');
-        
-//     })
-
-//     const handleClick = ()=> {
-//         setNumber(n=> n + 1)
-//     }
-
-//     return(
-//         <button onClick={handleClick}>Click me!</button>
-//     )
-// }
-
-
-// useRef //
-
-
-const UseRef = ()=> {
-
-    const ref = useRef(0) //useRef(0) creates a ref object.
+    const ref = useRef(0)
 
     useEffect(()=> {
         console.log('component rendered');
