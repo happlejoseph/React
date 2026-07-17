@@ -12,6 +12,8 @@ import ReactForms from './ReactForms'
 import UseRef from './UseRef'
 import UseReducer from './UseReducer'
 import Counter from './customHook/Counter'
+import CounterData from './redux/Counter'
+import CounterRTK from './redux/CounterRTK'
 
 function App() {
 
@@ -29,8 +31,10 @@ function App() {
           <Route path="/user-context" element={<UserContextComp/>}/>
           <Route path="/link" element={<LinkComp/>}/>
           <Route path="/dynamic/:id" element={<DynamicRoute/>}/>
+          <Route path='/redux' element={<CounterData />}/>
+          <Route path='/redux-rtk' element={<CounterRTK/>}/>
 
-          <Rout path='/form' element={<ReactForms/>}/>
+          <Route path='/form' element={<ReactForms/>}/>
 
           <Route path='useref' element={<UseRef/>}/>
           <Route path='/usereducer' element={<UseReducer/>}/>
