@@ -14,6 +14,8 @@ import UseReducer from './UseReducer'
 import Counter from './customHook/Counter'
 import CounterData from './redux/Counter'
 import CounterRTK from './redux/CounterRTK'
+import MessageApp from './redux/MessageApp'
+import GetData from './GetData'
 
 function App() {
 
@@ -33,6 +35,8 @@ function App() {
           <Route path="/dynamic/:id" element={<DynamicRoute/>}/>
           <Route path='/redux' element={<CounterData />}/>
           <Route path='/redux-rtk' element={<CounterRTK/>}/>
+          <Route path='/message' element={<MessageApp/>}/>
+          <Route path='/axiosGet' element={<GetData/>}/>
 
           <Route path='/form' element={<ReactForms/>}/>
 

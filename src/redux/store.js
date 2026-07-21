@@ -6,6 +6,7 @@
 
 import { configureStore } from "@reduxjs/toolkit";
 import conuterReducer from './counterSlice'
+import messageReducer from './messageSlice'
 
 
 // const store = createStore(conuterReducer)
@@ -16,7 +17,9 @@ import conuterReducer from './counterSlice'
 
  const store = configureStore({
     reducer: {
-        counter: conuterReducer
+        counter: conuterReducer,
+        message: messageReducer,
+        
     }
 })
 
