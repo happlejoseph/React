@@ -16,6 +16,7 @@ import CounterData from './redux/Counter'
 import CounterRTK from './redux/CounterRTK'
 import MessageApp from './redux/MessageApp'
 import GetData from './GetData'
+import UserList from './redux/UserList'
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
           <Route path='/redux-rtk' element={<CounterRTK/>}/>
           <Route path='/message' element={<MessageApp/>}/>
           <Route path='/axiosGet' element={<GetData/>}/>
+          <Route path='/userlist' element={<UserList/>}/>
 
           <Route path='/form' element={<ReactForms/>}/>
 
